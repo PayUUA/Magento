@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <PayU_PayU>
+            <active>true</active>
+            <codePool>local</codePool>
+        </PayU_PayU>
+    </modules>
+</config>
