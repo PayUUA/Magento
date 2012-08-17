@@ -58,7 +58,7 @@ class PayU_PayU_Model_PayU extends Mage_Payment_Model_Method_Abstract
                     'BILL_LNAME' => $b->getLastname(),
                     'BILL_CITY' => $b->getCity() ,
                     'BILL_COUNTYCODE' => $b->getCountry(),
-                    'BILL_ADRESS' => $b->getStreet(1),
+                    'BILL_ADDRESS' => $b->getStreet(1),
                     'BILL_EMAIL' => $a->getEmail(),
                     'BILL_PHONE' => $a->getTelephone(),
                     'BILL_ZIPCODE' => $a->getPostcode(),
