@@ -1,4 +1,7 @@
-Модуль для Magento 1.7
+(For PayU Ukraine and Russian ONLY)
+-----
+
+Модуль для Magento 1.7 
 =====
 
 Установка
