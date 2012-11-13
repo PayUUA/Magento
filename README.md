@@ -16,8 +16,12 @@
 
 >4. Выбрать PayU (UA/RU)
 
->5. Включить модуль и ввести все настройки ( Пример на скриншоте ) 
+>5. Включить модуль и ввести все настройки 
 
+![Скриншот][1]
 
 Ccылка для IPN : `http://yoursite/PayU/responce`
 -----
+
+
+[1]: https://raw.github.com/PayUUA/Magento/master/magento.png
