@@ -14,8 +14,10 @@ class PayU_PayU_Model_PayU extends Mage_Payment_Model_Method_Abstract
         return Mage::getUrl('PayU/redirect', array('_secure' => true));
     }
 
-    public function getWebmoneyUrl() {
-        $url = 'https://secure.payu.ua/order/lu.php';
+    public function getPayUUrl() {
+       # $url = 'https://secure.payu.ua/order/lu.php';
+        $url = ( $this->getConfigData('LU_url') != "" ) ? $this->getConfigData('LU_url') : 'https://secure.payu.ua/order/lu.php';
+
         return $url;
     }
 
@@ -107,7 +109,8 @@ class PayU_PayU_Model_PayU extends Mage_Payment_Model_Method_Abstract
                           'merchant' => $this->getConfigData('merchant'), 
                           'secretkey' => $this->getConfigData('secret_key'), 
                           'debug' => $this->getConfigData('debug_mode'),
-                          'button' => $button
+                          'button' => $button,
+                          'luUrl' => $this->getPayUUrl()
                 );
           return $settings;
       }
